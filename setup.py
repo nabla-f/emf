@@ -1,9 +1,9 @@
 import os
 from glob import glob
 from setuptools import setup
-from setuptools.config import read_configuration
+from setuptools.config import read_configuration, setupcfg
 
-config = read_configuration('setup.cfg')
+config = setupcfg('setup.cfg')
 config_dict = {}
 
 for section in config:
